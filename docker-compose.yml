@@ -57,7 +57,7 @@ services:
     command: >
       bash -c "jupyter lab --ip=0.0.0.0 --port=8888 --no-browser
       --allow-root --NotebookApp.token='spark'
-      --NotebookApp.password=''
+      --NotebookApp.password='' 
       --notebook-dir=/opt/spark-notebooks"
     volumes:
       - ./data:/opt/spark-data
